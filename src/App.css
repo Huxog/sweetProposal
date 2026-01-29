@@ -1,0 +1,209 @@
+.proposal-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.main-question {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.paragraphs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.paragraph-section {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(201, 24, 74, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  animation: fadeInUp 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.paragraph-section:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.paragraph-section:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.paragraph-section p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  animation: fadeIn 1s ease-out 0.9s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn {
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-yes {
+  background: linear-gradient(135deg, #c9184a 0%, #e91e63 100%);
+  color: white;
+}
+
+.btn-yes:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(201, 24, 74, 0.4);
+}
+
+.btn-no {
+  background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+  color: white;
+  position: absolute;
+  transition: all 0.1s ease;
+}
+
+.btn-no:hover {
+  background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+}
+
+/* Heart explosion styles */
+.heart {
+  position: fixed;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: 1000;
+  animation: floatHeart 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes floatHeart {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(calc(var(--drift-x) * 0.1), calc(var(--drift-y) * 0.1)) scale(1.2) rotate(calc(var(--rotation) * 0.1));
+  }
+  30% {
+    opacity: 1;
+    transform: translate(calc(var(--drift-x) * 0.3), calc(var(--drift-y) * 0.3)) scale(1) rotate(calc(var(--rotation) * 0.3));
+  }
+  70% {
+    opacity: 0.8;
+    transform: translate(calc(var(--drift-x) * 0.7), calc(var(--drift-y) * 0.7)) scale(0.8) rotate(calc(var(--rotation) * 0.7));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--drift-x), var(--drift-y)) scale(0.3) rotate(var(--rotation));
+  }
+}
+
+/* Success message */
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(3rem, 10vw, 6rem);
+  color: var(--accent-color);
+  text-align: center;
+  z-index: 1001;
+  animation: pulseIn 0.5s ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulseIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .buttons-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .paragraph-section {
+    padding: 1.5rem;
+  }
+
+  .paragraph-section p {
+    font-size: 1rem;
+  }
+}
