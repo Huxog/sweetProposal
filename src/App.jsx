@@ -65,29 +65,35 @@ function App() {
 
   return (
     <div className="proposal-container">
-      <h1 className="main-question">Will you be my girlfriend?</h1>
 
       <div className="paragraphs-container">
         <div className="paragraph-section">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Every moment with you feels like a beautiful dream I never want to wake up from.
+            En los últimos días ambos hemos sido testigo de como se ven dos personas dispuestas. A mi me falltan años para convertirme en el hombre que quiero ser, en un hombre que creo que estarás orgullosa de llamar tu pareja. Quiero que sepas que tengo miedo, miedo de no estar a la altura, miedo de no ser suficiente, miedo de fallarte. Pero a pesar de todo eso, quiero no intentarlo si no lograrlo.
           </p>
         </div>
 
         <div className="paragraph-section">
           <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            You make my heart skip a beat every single time I see you smile.
-            I cannot imagine my life without you by my side.
+            Quiero que seas mi compañera de vida, quiero que estemos juntos en las buenas y en las malas, en la salud y en la enfermedad, en la riqueza y en la pobreza. Quiero que seas mi mejor amiga, mi confidente, mi cómplice, mi amor, mi todo; quiero que seas una extensión de mi y de mi corazón, de mis emociones, de mis metas y de mis sueños.
+          </p>
+        </div>
+        <div className="paragraph-section">
+          <p>
+            Sé que lo que estoy pidiendo es invaluable y no pretendo aparentar que no existe el riesgo de que las cosas no salgan bien. Yo quiero ese riesgo, yo quiero ese reto. Yo quiero demostrarnos a los dos que puedo ser alguien que te haga feliz, que te puede ofrecer un espacio seguro siempre que lo necesites, que te va a apoyar a lograr tus metas, que va a celebrar tus logros, que va a estar a tu lado en los momentos de mas desesperanza.
+          </p>
+        </div>
+        <div className="paragraph-section">
+          <p>
+            Aqui, hoy, quiero que sepas que te quiero y que me inspiras a ser una mejor persona para mi pero principalmente para ti. Quiero que seas mi novia. Quiero que estemos juntos y que vivamos una relación que triunfe. Quiero que seas feliz a mi lado.
           </p>
         </div>
       </div>
+      <h1 className="main-question">¿Quieres ser mi novia?</h1>
 
       <div className="buttons-container">
         <button className="btn btn-yes" onClick={handleYesClick}>
-          Yes
+          Si
         </button>
         <button
           ref={noButtonRef}
@@ -127,7 +133,7 @@ function App() {
       {/* Success message */}
       {showSuccess && (
         <div className="success-message">
-          I love you!
+          ¡Te amo!
         </div>
       )}
     </div>
