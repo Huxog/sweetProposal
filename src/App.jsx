@@ -69,7 +69,7 @@ function App() {
       <div className="paragraphs-container">
         <div className="paragraph-section">
           <p>
-            En los últimos días ambos hemos sido testigo de como se ven dos personas dispuestas. A mi me falltan años para convertirme en el hombre que quiero ser, en un hombre que creo que estarás orgullosa de llamar tu pareja. Quiero que sepas que tengo miedo, miedo de no estar a la altura, miedo de no ser suficiente, miedo de fallarte. Pero a pesar de todo eso, quiero no intentarlo si no lograrlo.
+            En los últimos días ambos hemos sido testigo de como se ven dos personas dispuestas. A mi me faltan años para convertirme en el hombre que quiero ser, en un hombre que creo que estarás orgullosa de llamar tu pareja. Quiero que sepas que tengo miedo, miedo de no estar a la altura, miedo de no ser suficiente, miedo de fallarte. Pero a pesar de todo eso, quiero no intentarlo si no lograrlo.
           </p>
         </div>
 
@@ -80,12 +80,12 @@ function App() {
         </div>
         <div className="paragraph-section">
           <p>
-            Sé que lo que estoy pidiendo es invaluable y no pretendo aparentar que no existe el riesgo de que las cosas no salgan bien. Yo quiero ese riesgo, yo quiero ese reto. Yo quiero demostrarnos a los dos que puedo ser alguien que te haga feliz, que te puede ofrecer un espacio seguro siempre que lo necesites, que te va a apoyar a lograr tus metas, que va a celebrar tus logros, que va a estar a tu lado en los momentos de mas desesperanza.
+            Sé que lo que estoy pidiendo es invaluable y no pretendo aparentar que no existe el riesgo de que las cosas no salgan bien. Yo quiero ese riesgo, yo quiero ese reto. Yo quiero demostrarnos a los dos que puedo ser alguien que te haga feliz, que te puede ofrecer un espacio seguro siempre que lo necesites, que te va a apoyar a lograr tus metas, que va a celebrar tus logros, que va a estar a tu lado en los momentos de más desesperanza.
           </p>
         </div>
         <div className="paragraph-section">
           <p>
-            Aqui, hoy, quiero que sepas que te quiero y que me inspiras a ser una mejor persona para mi pero principalmente para ti. Quiero que seas mi novia. Quiero que estemos juntos y que vivamos una relación que triunfe. Quiero que seas feliz a mi lado.
+            Aquí, hoy, quiero que sepas que te quiero y que me inspiras a ser una mejor persona para mi pero principalmente para ti. Quiero que seas mi novia. Quiero que estemos juntos y que vivamos una relación que triunfe. Quiero que seas feliz a mi lado.
           </p>
         </div>
       </div>
